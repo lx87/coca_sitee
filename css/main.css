@@ -11895,7 +11895,6 @@ body {
 
 .nav-link {
   color: #000;
-  font-family: inter_med;
   font-size: 1.3rem;
 }
 @media screen and (max-width: 991px) {
@@ -12240,12 +12239,10 @@ body {
 .over_h1 {
   color: white;
   font-size: clamp(40px, 5vw, 80px);
-  font-family: inter_semi;
 }
 
 .over_h2 {
   color: #7E8492;
-  font-family: inter_med;
 }
 
 .over_icon {
@@ -12253,7 +12250,6 @@ body {
 }
 
 .over_grid_h1 {
-  font-family: inter_semi;
   color: white;
   font-size: 2.5vw;
 }
@@ -12265,7 +12261,6 @@ body {
 }
 
 .over_grid_h2 {
-  font-family: inter_med;
   color: #7E8492;
   width: 500px;
   font-size: 1vw;
@@ -12327,12 +12322,10 @@ body {
 }
 
 .exp_col_h1 {
-  font-family: inter_semi;
   color: #1D1E25;
 }
 
 .exp_col_h2 {
-  font-family: inter_semi;
   color: #1D1E25;
 }
 
@@ -12350,12 +12343,10 @@ body {
 }
 
 .testimonirals_h1 {
-  font-family: inter_semi;
   color: #1D1E25;
 }
 
 .testimonirals_h2 {
-  font-family: inter_semi;
   color: #7E8492;
   width: 40vw;
 }
@@ -12414,12 +12405,10 @@ body {
 }
 
 .acc_h1 {
-  font-family: inter_semi;
   color: #1D1E25;
 }
 
 .acc_h2 {
-  font-family: inter_med;
   color: #7E8492;
 }
 
@@ -12455,14 +12444,12 @@ body {
 }
 
 .accordion-button {
-  font-family: inter_semi;
   color: #1D1E25;
   padding: 2rem;
   font-size: 2rem;
 }
 
 .accordion-body {
-  font-family: inter_med;
   color: #7E8492;
   width: 40vw;
   line-height: 1.4;
@@ -12591,14 +12578,6 @@ body {
   }
 }
 
-.form-subtitle {
-  font-family: inter_reg;
-}
-
-.email {
-  font-family: inter_med;
-}
-
 .footer {
   display: flex;
   justify-content: end;
@@ -12623,12 +12602,10 @@ body {
 }
 
 .footer_nav_li_p {
-  font-family: inter_reg;
   color: #1D1E25;
 }
 
 .footer_p_col {
-  font-family: inter_reg;
   color: #1D1E25;
   margin: 0;
   text-decoration: none;

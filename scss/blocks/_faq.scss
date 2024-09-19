@@ -1,9 +1,7 @@
 .acc_h1{
-    font-family: $semi;
     color: $h1c;
 }
 .acc_h2{
-    font-family: $med;
     color: $h2c;
 }
 
@@ -41,14 +39,12 @@
   }
 
 .accordion-button{
-    font-family: $semi;
     color: $h1c;
     padding: 2rem;
     font-size: 2rem;
 }
 
 .accordion-body{
-    font-family: $med;
     color: $h2c;
     width: 40vw;
     line-height: 1.4;
