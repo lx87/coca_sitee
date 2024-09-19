@@ -1,0 +1,23 @@
+.pass_h1{
+    color: $h1c;
+}
+
+.pass_h2{
+    color: $h2c;
+    line-height: 1.5;
+}
+
+.pass_li{
+    color: $h1c;
+}
+
+.pass_column{
+    width: max-content;
+}
+
+.image_pass{
+    width: 43vw;
+    @media screen and (max-width:1350px) {
+       width: 80vw;
+    }
+}

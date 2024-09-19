@@ -1,0 +1,64 @@
+html{
+    overflow-x: hidden;
+}
+
+body{
+    cursor: default;
+}
+
+.bg_top{
+    background-image: url(/img/bg_hero.png);
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 7.5vw;
+}
+
+.bg_bottom{
+    background-image: url(/img/bg_bottom.png);
+    background-position: center;
+    background-size: cover;
+}
+
+$h1c: #1D1E25;
+$h2c: #7E8492;
+
+
+
+@mixin base_padding{
+    padding-left: clamp(22px, 5vw, 120px);
+    padding-right: clamp(22px, 5vw, 120px);
+}
+
+@font-face {
+    font-family: inter_reg;
+    src: url(/fonts/Inter-Regular.otf);
+}
+
+@font-face {
+    font-family: inter_bold;
+    src: url(/fonts/Inter-Bold.otf);
+}
+
+@font-face {
+    font-family: inter_med;
+    src: url(/fonts/Inter-Medium.otf);
+}
+
+@font-face {
+    font-family: inter_semi;
+    src: url(/fonts/Inter-SemiBold.otf);
+}
+
+$reg: inter_reg;
+$bold: inter_bold;
+$med: inter_med;
+$semi: inter_semi;
+
+@mixin button{
+   background-color: #1D1E25;
+   color: white;
+   border-radius: 100px;
+   border: none;
+   padding: 1vw 3vw;
+   white-space: nowrap;
+}

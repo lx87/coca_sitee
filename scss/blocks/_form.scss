@@ -1,0 +1,105 @@
+.form_section{
+    @include base_padding;
+}
+
+.form-subtitle{
+    color: $h2c;
+    font-family: $reg;
+    font-size: 1.2rem;
+    @media screen and (max-width:1400px) {
+        font-size: 2rem;
+       }
+}      
+    
+.form-control{
+        @media screen and (max-width:1400px) {
+            font-size: 1.5rem;
+           }
+    }    
+
+
+.form-label{
+    @media screen and (max-width:1400px) {
+        font-size: 2rem;
+       }
+}
+
+
+.form-control{
+    font-size: 1.2rem;
+    @media screen and (max-width:1400px) {
+        font-size: 1.5rem;
+       }
+       @media screen and (max-width:1000px) {
+        font-size: 1rem;
+       }
+}
+
+.form-text-area{
+    height: 200px;
+}
+
+// .imagep-container{
+//     width: clamp(100px, 30vw, 300px);
+
+// }
+
+.form_bg{
+    display: unset;
+    width: 100%;
+    @media screen and (max-width:1400px) {
+        display: none;
+       }
+}
+
+.form-container{
+    border: 1px solid #CED1D8;
+    padding: 56px 48px;
+    background-color: white;
+    height: max-content;
+    width: 50vw;
+    @media screen and (max-width:1400px) {
+        width: 85vw;
+       }
+
+}
+
+
+#custom_invalid{
+    border: 1px solid  #dc3545;
+}
+
+#custom_valid{
+    border: 1px solid  #198754;
+}
+
+
+.dropdown_row{
+    border: 1px solid #dee2e6;
+    background-color: transparent; 
+}
+
+.button_submit{
+    @include button;
+}
+
+.phone_dropdown {
+    max-width: 120px;
+    font-size: .8rem; 
+    background-color: transparent;
+    padding: 0 .5rem;
+    border: none;
+    font-size: 1.1rem;
+    @media screen and (max-width:1400px) {
+        font-size: 1.2rem;
+    }
+      
+}
+
+.form_group_input{
+   border: none;
+   background-color: transparent;
+   @media screen and (max-width:1000px) {
+    font-size: 1     rem;
+   }
+}   

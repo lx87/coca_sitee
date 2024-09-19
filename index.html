@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
+    <title>Coca1</title>
+</head>
+<body>
+    <!--Nav + hero-->    
+    <div class="wrapper bg_top">
+        <!--Nav-->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom ">
+            <div class="container-fluid nav_container">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logo.svg" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="/img/burger.svg" alt="" class="custom-toggler-icon">
+                </button>
+                <div class="collapse navbar-collapse justify-content-end nav_menu"  id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-contact" href="#">Contact Us →</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--hero-->
+        <div class="container-fluid hero_section">
+            <div class="row justify-content-between">
+            <div class="col-12 col-xl-auto d-flex flex-column justify-content-center">
+                 <!-- hero col1 -->
+                <h1 class="fw-bold hero_h1 mb-lg-5 mb-md-3 mb-sm-5">Digitally forward <br> creative</h1>
+                <h2 class="fw-semibold hero_h2 mt-lg-5 mt-md-3 mt-sm-5">
+                When it comes to interactive <br>
+                marketing, we've got you covered. <br>
+                Be where the world is going
+                </h2>
+                <div class="container-fluid d-flex flex-row hero_input_contaier justify-content-between align-items-end mt-5">
+                    <input class="hero_input" type="text" placeholder="Enter your email">
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your Email ang get started!" type="button" class="hero_input_button fw-bold">Try for free</button>
+                </div>
+            </div>
+            <div class="col-12 col-xl-auto d-flex flex-column align-items-center align-items-xxl-end justify-content-center p-0"> 
+                <!-- hero col2 -->
+                <div class="card hero_card shadow rounded-4">
+                    <div class="card_body p-5">
+                        <h4 class="card-title mb-4">Sales Report</h4>
+                        <div class="card_p_wrap d-flex justify-content-start align-items-center mb-4 gap-5">
+                           <div class="d-flex justify-content-center gap-2">
+                                <img class="image-fluid" src="/img/Shape blue.svg" alt="Blue">
+                                <p class="m-0 graph_p">My product</p>
+                           </div>
+                           <div class="d-flex justify-content-center gap-2">
+                                <img class="image-fluid" src="/img/Shape orange.svg" alt="Orange">
+                                <p class="m-0 graph_p">Competitor</p>
+                           </div>
+                        </div>
+                        <img class="graph_svg" src="/img/Graph.svg" alt="">
+                        <div class="row">
+                            <div class="col pb-5">
+                                <ul class="list-unstyled graph_numbers m-0 gap-4 d-flex flex-column align-items-end">
+                                    <li>1k</li>
+                                    <li>800</li>
+                                    <li>600</li>
+                                    <li>400</li>
+                                    <li>200</li>
+                                    <li>0</li>
+                                </ul>
+                            </div>
+
+                            <div class="col d-flex flex-column align-items-center graph_col">
+                                <div class="graph_pointer" id="pointer_1"></div>
+                                    <div class="custom_tooltip" id="tooltip_1">
+                                        <div class="tooltip_content">
+                                            <div class="tooltip_box"></div>
+                                            <span class="tooltip_text">550</span>
+                                        </div>
+                                    </div>
+                                <div class="vertical-hr"></div>
+                                <p class="graph_month">May</p>
+                            </div>
+                            <div class="col d-flex flex-column align-items-center graph_col">
+                                <div class="graph_pointer" id="pointer_2"></div>
+                                    <div class="custom_tooltip" id="tooltip_2">
+                                        <div class="tooltip_content">
+                                            <div class="tooltip_box"></div>
+                                            <span class="tooltip_text">820</span>
+                                        </div>
+                                    </div>
+                                <div class="vertical-hr"></div>
+                                <p class="graph_month">Jun</p>
+                            </div>
+                            <div class="col d-flex flex-column align-items-center graph_col">
+                                <div class="graph_pointer" id="pointer_3"></div>
+                                <div class="custom_tooltip" id="tooltip_3">
+                                    <div class="tooltip_content">
+                                        <div class="tooltip_box"></div>
+                                        <span class="tooltip_text">777</span>
+                                    </div>
+                                </div>
+                                <div class="vertical-hr"></div>
+                                <p class="graph_month">Jul</p>
+                            </div>
+                            <div class="col d-flex flex-column align-items-center graph_col">
+                                <div class="graph_pointer" id="pointer_4"></div>
+                                    <div class="custom_tooltip" id="tooltip_4">
+                                        <div class="tooltip_content">
+                                            <div class="tooltip_box"></div>
+                                            <span class="tooltip_text">530</span>
+                                        </div>
+                                    </div>
+                                <div class="vertical-hr"></div>
+                                <p class="graph_month">Aug</p>
+                            </div>
+                            <div class="col d-flex flex-column align-items-center graph_col">
+                                <div class="graph_pointer" id="pointer_5"></div>
+                                <div class="custom_tooltip" id="tooltip_5">
+                                    <div class="tooltip_content">
+                                        <div class="tooltip_box"></div>
+                                        <span class="tooltip_text">620</span>
+                                    </div>
+                                </div>
+                                <div class="vertical-hr"></div>
+                                <p class="graph_month">Sep</p>
+                            </div>
+                            <div class="col d-none flex-column align-items-center graph_col d-xxl-flex">
+                                <div class="graph_pointer" id="pointer_6"></div>
+                                <div class="custom_tooltip" id="tooltip_6">
+                                    <div class="tooltip_content">
+                                        <div class="tooltip_box_6"></div>
+                                        <span class="tooltip_text">550</span>
+                                    </div>
+                                </div>
+                                <div class="vertical-hr"></div>
+                                <p class="graph_month">Oct</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container m-0 hero_card">
+                    <div class="row bg-black text-white rounded-4 p-4">
+                        <div class="col-6">
+                            <h5>Sales</h5>
+                            <h2 class="fw-bold">$31,092</h2>
+                            <p class="text-success mb-0">
+                                <i class="bi bi-arrow-up"></i> 4.2% 
+                                <span class="card2_p">from last year</span>
+                            </p>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h5>Marketing</h5>
+                            <h2 class="fw-bold">$29,128</h2>
+                            <p class="text-danger mb-0">
+                                <i class="bi bi-arrow-down"></i> 1.2% 
+                                <span class="card2_p">from last year</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!--Overview section-->
+    <div class="contaier-fluid overview_section pt-5 pb-5">
+        <div class=" ps-0 mt-0 mt-lg-5 mb-5 container d-flex flex-column justify-content-start over_h_contaier">
+            <h1 class="over_h1 mb-3">
+                Coca help our client solve <br>
+                complex customer problems <br>
+                with date that does more.  
+            </h1>
+            <h2 class="over_h2 fs-3 mt-4">
+                Our platform offers the modern enterprise full control of how date can be <br>
+                access and used with industry leading software solutions for identity, <br>
+                activation, and date collaboration
+            </h2>
+        </div>
+        <div class="container-fluid over_grid_container mt-5 ps-0">
+            <div class="row over_grid justify-content-start justify-content-lg-between">
+                <div class="col-12 col-sm-6 over_grid_cell">
+                    <div class="d-flex flex-column align-items-start gap-5 mt-5">
+                        <img src="/img/calendar.svg" alt="" class="over_icon">
+                        <h1 class="over_grid_h1">Build your date <br class="adapt_br"> fundamental</h1>
+                        <h2 class="over_grid_h2">Build access to data, develop valuable business insights and drive revenue while maintaining full control over access and use of data at all times.</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 over_grid_cell">
+                    <div class="d-flex flex-column align-items-start gap-5 mt-5">
+                        <img src="/img/measure.svg" alt="" class="over_icon">
+                        <h1 class="over_grid_h1">Measure more <br class="adapt_br"> effective</h1>
+                        <h2 class="over_grid_h2">Effectively measure people-based campaigns with the freedom to choose from best-of breed partners to optimize and drive media innovation.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row over_grid justify-content-start justify-content-lg-between">
+                <div class="col-12 col-sm-6 over_grid_cell">
+                    <div class="d-flex flex-column align-items-start gap-5 mt-5">
+                        <img src="/img/ToDo.svg" alt="" class="over_icon">
+                        <h1 class="over_grid_h1">Activate your <br class="adapt_br"> data</h1>
+                        <h2 class="over_grid_h2">Accurately address your specific audiences at scale across any channel, platform, publisher or network and safely translate data between identity space to improve results.</h2>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 over_grid_cell">
+                    <div class="d-flex flex-column align-items-start gap-5 mt-5">
+                        <img src="/img/shield.svg" alt="" class="over_icon">
+                        <h1 class="over_grid_h1">Strengthen <br class="adapt_br">consumer privacy</h1>
+                        <h2 class="over_grid_h2">Protect your customer data with leading privacy-preserving technologies and advanced techniques to minimize data movement while still enabling insight generation.</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Accordion + carousel-->
+    <div class="wrapper pb-5">
+        <div class="container-fluid mt-5 pt-5 mb-5 pb-5">
+            <div class="row column-gap-5 justify-content-between">
+                <div class="col-xxl-6 col-12 mb-5 mb-xxl-0 me-3 pass_column">
+                    <img src="/img/pass.png" alt="" class="image_pass">
+                </div>
+                <div class="col-xxl-6 col-12 d-flex flex-column pass_column">
+                    <h1 class="pass_h1 display-2 fw-semibold">Passion to increase <br class="adapt_br"> company revenue <br class="adapt_br"> up to 85%</h1>
+                    <h2 class="pass_h2 fs-3 fw-medium">Automate your sales, marketing and <br class="adapt_br"> service in one platform. Avoid date leaks <br class="adapt_br"> and enable consistent messaging</h2>
+                    <div class="container-fluid p-0 pass_li d-flex flex-column gap-3 mt-5">
+                        <div class="d-flex align-items-center mb-3">
+                        <div class="me-3">
+                            <img src="/img/yes.svg" alt="yes">
+                        </div>
+                        <div>
+                            <p class="mb-0 fs-4">Close more deals with single - page <br class="adapt_br"> contact management</p>
+                        </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                        <div class="me-3">
+                        <img src="/img/yes.svg" alt="yes">
+                        </div>
+                        <div>
+                            <p class="mb-0 fs-4">Enjoy one-click calling, call scripts and <br class="adapt_br"> voicemail automation</p>
+                        </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                        <div class="me-3">
+                            <img src="/img/yes.svg" alt="yes">
+                        </div>
+                        <div>
+                            <p class="mb-0 fs-4">Take stages and milestones of your <br class="adapt_br"> deals to keep the sales process on track</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mb-5">
+            <div class="row row-gap-5 row-gap-xxl-0 mb-5">
+                <div class="exp_col col-xxl-3 col-6 border-end d-flex align-items-start flex-column ">
+                    <div class="text_wrap">
+                        <h1 class="exp_col_h1 display-2">17k</h1>
+                        <h2 class="exp_col_h2 fs-5">happy customers on <br class="adapt_br"> worldwide</h2>
+                    </div>
+                </div>
+                <div class="exp_col exp_col_border col-xxl-3 col-6 d-flex align-items-start align-items-xxl-center flex-column ">
+                    <div class="text_wrap">
+                        <h1 class="exp_col_h1 display-2">15+</h1>
+                        <h2 class="exp_col_h2 fs-5">Hours of work <br class="adapt_br"> experience</h2>
+                    </div>
+                </div>
+                <div class="exp_col col-xxl-3 col-6 d-flex flex-column align-items-start align-items-xxl-center ">
+                    <div class="text_wrap">
+                        <h1 class="exp_col_h1 display-2">50+</h1>
+                        <h2 class="exp_col_h2 fs-5">Creativity & passionate <br class="adapt_br"> members</h2>
+                    </div>
+                </div>
+                <div class="exp_col col-xxl-3 col-6 border-start d-flex align-items-start align-items-xxl-end flex-column ">
+                    <div class="text_wrap">
+                        <h1 class="exp_col_h1 display-2">100+</h1>
+                        <h2 class="exp_col_h2 fs-5">Integrations lorem <br class="adapt_br"> ipsum integrations</h2>
+                    </div>
+                </div>
+            </div>
+            <img src="/img/exp_img.png" alt="" class="image w-100 pt-5">
+        </div>
+        <!--Carousel-->
+        <div class="container-fluid pt-5 mb-5 pb-5 testimonirals_section">
+            <div class="container-fluid d-flex flex-column flex-xxl-row align-items-start align-items-xxl-center justify-content-xxl-between mb-5">
+                <h1 class="testimonirals_h1 display-2 mb-5 mb-lg-5" >What our customer <br> are saying</h1>
+                <h2 class="testimonirals_h2 fs-4">We are trusted numerous companies from different business to meet their needs</h2>
+            </div> 
+            <div class="container-fluid d-flex flex-column">
+                <img src="/img/quote.svg" class="align-self-start quotation_icon" alt="quotation">
+                <!--Carousel-->
+                <div id="testimonialCarousel" class="align-self-end carousel slide testimonirals_slider" data-bs-ride="true">
+                    <div class="carousel-inner">
+                      <!-- Первый слайд -->
+                      <div class="carousel-item active">
+                        <div class="card">
+                          <div class="card-body">
+                            <!-- Звезды и рейтинг -->
+                            <div class="d-flex align-items-center mb-3">
+                              <div class="me-2">
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <!-- Иконки звезд -->
+                              </div>
+                              <div class="text-muted">5.0</div>
+                            </div>
+                            <!-- Текст цитаты -->
+                            <blockquote class="blockquote">
+                              <p class="fs-3">“With Agency the results are very satisfying, wrapped with high quality and innovative design that makes a surge of visitors on my website”</p>
+                            </blockquote>
+                            <!-- Информация о пользователе -->
+                            <div class="d-flex align-items-center mt-4">
+                              <img src="/img/ava1.png" class="rounded-circle me-3" alt="Renee Wells">
+                              <div>
+                                <h6 class="mb-0">Renee Wells</h6>
+                                <p class="text-muted mb-0">Product Designer, Quotient</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Второй слайд (пример) -->
+                      <div class="carousel-item">
+                        <div class="card">
+                          <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                              <div class="me-2">
+                                <span class="text-warning">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                              </div>
+                              <div class="text-muted">5.0</div>
+                            </div>
+                            <blockquote class="blockquote">
+                              <p class="fs-3">“Another amazing review about the great work this agency has done.”</p>
+                            </blockquote>
+                            <div class="d-flex align-items-center mt-4">
+                              <img src="/img/ava2.png" class="rounded-circle me-3" alt="John Doe">
+                              <div>
+                                <h6 class="mb-0">LX</h6>
+                                <p class="text-muted mb-0">CEO, FayanceEnt.</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Навигация (кнопки "вперед"/"назад") -->
+                      <button class="carousel-control-prev d-none d-lg-flex" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                        <svg class="arrow_prev" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73561 13.0372C7.38414 13.3886 6.81429 13.3886 6.46282 13.0372L1.06282 7.63718C0.71135 7.2857 0.71135 6.71585 1.06282 6.36438L6.46282 0.964384C6.81429 0.612912 7.38414 0.612912 7.73562 0.964384C8.08709 1.31586 8.08709 1.8857 7.73561 2.23718L3.87201 6.10078L14.2992 6.10078C14.7963 6.10078 15.1992 6.50372 15.1992 7.00078C15.1992 7.49784 14.7963 7.90078 14.2992 7.90078L3.87201 7.90078L7.73561 11.7644C8.08709 12.1159 8.08709 12.6857 7.73561 13.0372Z"/>
+                        </svg>
+                      </button>
+                      <button class="carousel-control-next d-none d-lg-flex" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                        <svg class="arrow_next" width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.73561 13.0372C7.38414 13.3886 6.81429 13.3886 6.46282 13.0372L1.06282 7.63718C0.71135 7.2857 0.71135 6.71585 1.06282 6.36438L6.46282 0.964384C6.81429 0.612912 7.38414 0.612912 7.73562 0.964384C8.08709 1.31586 8.08709 1.8857 7.73561 2.23718L3.87201 6.10078L14.2992 6.10078C14.7963 6.10078 15.1992 6.50372 15.1992 7.00078C15.1992 7.49784 14.7963 7.90078 14.2992 7.90078L3.87201 7.90078L7.73561 11.7644C8.08709 12.1159 8.08709 12.6857 7.73561 13.0372Z"/>
+                        </svg>
+                      </button>
+                </div>
+            </div>
+        </div>
+        <!--Accordion-->
+        <div class="container-fluid">
+            <div class="container d-flex flex-column align-items-center text-center mt-5 mb-5 pt-5 pb-5">
+                <h1 class="acc_h1 display-1 ">Frequently asked questions</h1>
+                <h2 class="acc_h2 fs-2 mt-5">Everything you need to know about the product and billing.</h2>
+            </div>
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                            Is there a free trial available?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Yes, we offer a 30-day free trial with full access to all features.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                            How Can I Add More Emails To My Account?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Go to "Account Settings" > "Manage Email Addresses" to add more emails.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                            Can I Change Plans Or Cancel My Subscription At Any Time?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Yes, you can change or cancel your subscription anytime via "Subscription" settings.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                            How Secure Is My Data With Sans CRM?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Your data is secured with encryption and regular security audits.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                            What Is The Uptime Guarantee?
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            We offer a 99.9% uptime guarantee, with compensation for downtime under our SLA.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <!-- form -->
+    <div class="container-fluid form_section d-flex justify-content-center align-items-center flex-column flex-xxl-row mt-0 pt-0 pt-xxl-5 mt-xxl-5 gap-3 mb-5 pb-5">
+        <div class="form-container">
+            <h1 class="form-title mb-4">Let's level up your brand</h1>
+            <p class="form-subtitle fs-4">You can reach us anytime <a href="mailto:limarx87@gmail.com">limarx87@gmail.com</a></p>
+        
+            <form class="needs-validation form_base mt-5 fs-2" novalidate>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First name" required>
+                            <div class="invalid-feedback">
+                                Please enter your first name.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last name" required>
+                            <div class="invalid-feedback">
+                                Please enter your last name.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="mb-3 mt-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="afterfx@adobe.com" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="phone" class="form-label">Phone number</label>
+                    <style>
+                        .dropdown_row{
+                            border-radius: .375rem;
+                        }
+                        .phone_dropdown{
+                            outline: none;
+                            border: none;
+                        }
+                    </style>
+                    <div class="input-group dropdown_row rounded-2" data-form_group="anchor">
+                        <select class="select phone_dropdown rounded-start-2 rounded-end-0" autocomplete="off"  id="countryCode">
+                            <option value="+1" selected>US</option>
+                            <option value="+7">RU</option>
+                            <option value="+44">UK</option>
+                        </select>
+                        <input type="tel" class="form-control form_group_input rounded-start-0 rounded-end-2" id="phone" placeholder="Enter your phone" required>
+                        <!-- <div class="invalid-feedback ps-2 pe-2 pb-2">
+                            Please enter a valid phone number.
+                        </div> -->
+                    </div>
+                </div>
+        
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control form-text-area" id="message" rows="3" placeholder="Leave us a message..." required></textarea>
+                    <div class="invalid-feedback">
+                        Please leave a message.
+                    </div>
+                </div>
+        
+                <button type="submit" class="btn btn-custom btn-lg button_submit">Get Started</button>
+            </form>
+        </div>
+        <!--Modal-->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="successModalLabel">Success!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Your form has been successfully submitted!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="image form_bg" src="/img/form_photo.png" alt="form_bg_photo">
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="wrapper bg_bottom mt-5 pt-5">
+    <footer class="footer">
+            <div class="container-fluid mb-5 mt-5">
+               <div class="row d-flex flex-column flex-xl-row justify-content-between align-items-start align-items-xl-center ">
+                <div class="col-auto">
+                    <h1 class="fw-bold display-3">Think beyond the wave</h1>
+                    <h2 class="fw-semibold hero_h2 footer_h2 mt-lg-5 mt-md-3 mt-sm-5 fs-3">
+                        Ask about Coca products, <br>
+                         pricing, implementation, or anything else. Our highly <br>
+                          trained reps are standing by, ready to help
+                    </h2>
+                </div>
+                <div class="col-auto">
+                    <button class="footer_button mt-3 mt-xl-0 fw-bold" >Try for free</button>
+                </div>
+               </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row footer_nav justify-content-between pb-5 pt-5">
+                    <div class="col-10 col-xl-4">
+                        <img src="/img/logo.svg" alt="logo" class="mb-3">
+                        <h5 class="footer_logo_h" >We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs</h5>
+                    </div>
+                    <div class="col footer_nav_wrap">
+                        <div class="row justify-content-end gap-5">
+                            <div class="col-auto">
+                              <h5 class="footer_nav_h">Company</h5>
+                              <ul class="list-unstyled footer_p_col">
+                                <li><p>About</p></li>
+                                <li><p>Pricing</p></li>
+                                <li><p>Jobs</p></li>
+                                <li><p>Blog</p></li>
+                              </ul>
+                            </div>
+                            <div class="col-auto">
+                              <h5 class="footer_nav_h">Product</h5>
+                              <ul class="list-unstyled footer_p_col">
+                                <li><p>Sales Software</p></li>
+                                <li><p>Marketplace</p></li>
+                                <li><p>Terms & Conditions</p></li>
+                                <li><p>Privacy Policy</p></li>
+                              </ul>
+                            </div>
+                            <div class="col-auto">
+                              <h5 class="footer_nav_h">Discover</h5>
+                              <ul class="list-unstyled footer_p_col">
+                                <li><p>CRM Comparision</p></li>
+                                <li><p>Partner Program</p></li>
+                                <li><p>What is CRM</p></li>
+                                <li><p>Resource</p></li>
+                              </ul>
+                            </div>
+                            <div class="col-auto">
+                              <h5 class="footer_nav_h">Help Center</h5>
+                              <ul class="list-unstyled footer_p_col">
+                                <li><p>Community</p></li>
+                                <li><p>Knowledge Base</p></li>
+                                <li><p>Academy</p></li>
+                                <li><p>Support</p></li>
+                              </ul>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            <h1 class="footer_bottom_text text-center fs-6">© Copyright 2023 All Rights Reserved</h1>
+    </footer>
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="/js/script.js" ></script>
+</body>
+</html>

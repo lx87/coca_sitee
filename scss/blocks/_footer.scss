@@ -1,0 +1,50 @@
+.footer{
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+
+.footer_nav{
+    border-bottom: solid 1px $h2c;
+}
+
+.footer_nav_wrap{
+    @media screen and (max-width:1400px) {
+        display: none;
+       }
+}
+
+.footer_nav_h{
+    font-family: $bold;
+    color: $h1c;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.footer_p_col{
+    font-family: $reg;
+    color: $h1c;
+    margin: 0;
+    text-decoration: none;
+    color: $h1c;
+}
+
+.footer_logo_h{
+    line-height: 1.5;
+    color: $h2c;
+}
+
+.footer_bottom_text{
+    color: $h2c;
+    font-family: $reg;
+    margin-top: 2.4vw;
+    margin-bottom: 3vw;
+}
+
+.footer_h2{
+    line-height: 1.5;
+}
+
+.footer_button{
+    @include button;
+}

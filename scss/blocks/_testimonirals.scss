@@ -1,0 +1,67 @@
+.testimonirals_h1{
+    font-family: $semi;
+    color: $h1c;
+}
+
+.testimonirals_h2{
+    font-family: $semi;
+    color: $h2c;
+    width: 40vw;
+}
+
+.quotation_icon{
+  width: 8vw;
+}
+
+.testimonirals_slider{
+    width: 90%;
+    height: 300px;
+}
+
+.card{
+    border: 0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: clamp(28px, 5vw, 60px);
+    height: clamp(28px, 5vw, 60px);
+    border-radius: 50%; /* Круглая форма */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 100%;
+    background-color: transparent;
+    border: solid 2px;
+    border-color: #CED1D8;
+    transition: background-color ease 0.2s, border-color ease 0.2s;
+}
+ 
+.arrow_prev, .arrow_next{
+  fill: #CED1D8;
+  width: 45px;
+}
+
+.carousel-control-prev:hover, .carousel-control-next:hover {
+  background-color: #1D1E25;
+  border-color: #1D1E25;
+  .arrow_next, .arrow_prev{
+    fill: white;
+  }
+}
+
+ .carousel-control-next {
+  transform: rotate(180deg);
+
+}
+
+.carousel-control-prev {
+  top: 82%;
+  left: 85%;
+}
+
+.carousel-control-next {
+  top: 82%;
+}
+
+
+

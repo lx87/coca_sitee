@@ -1,0 +1,19 @@
+.exp_col_h1{
+    font-family: $semi;
+    color: $h1c;
+}
+.exp_col_h2{
+    font-family: $semi;
+    color: $h1c;
+}
+
+.exp_col{
+    border-color: #CED1D8;
+}
+
+.exp_col_border{
+    border-right: 1px solid #CED1D8;;
+    @media screen and (max-width:1350px) {
+       border: none;
+     }
+}

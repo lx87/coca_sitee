@@ -1,0 +1,51 @@
+.navbar-custom {
+    background-color: transparent; /* Белый фон */
+    padding-top: 45px;
+    margin: 0;
+
+}
+
+
+.wrapper{
+   @include base_padding;
+}
+
+.nav-link {
+    color: #000;
+    font-family: $med;
+    font-size: 1.3rem;
+    @media screen and (max-width:991px) {
+        font-size: 8vw;
+        margin-top: 20px;
+      }
+}
+.nav-link:hover {
+    color: #000;
+    text-decoration: underline;
+}
+.nav-link-contact {
+    margin-left: 2vw;
+
+    @media screen and (max-width:991px) {
+       margin-left: 0;
+     }
+}
+
+.navbar-nav{
+    gap: 1.5vw;
+}
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+.custom-toggler-icon {
+    width: 24px;
+    height: auto;
+}
+
+.navbar-toggler {
+    border: none; 
+    outline: none; 
+    box-shadow: none; 
+}
