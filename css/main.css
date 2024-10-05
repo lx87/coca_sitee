@@ -12632,4 +12632,177 @@ body {
   border: none;
   padding: 1vw 3vw;
   white-space: nowrap;
+}
+
+.plan_hero_h1 {
+  color: black;
+  font-family: inter_bold;
+  font-size: 7rem;
+  text-align: center;
+}
+
+.hero_tag {
+  color: #1463FF;
+  background-color: rgba(20, 98, 255, 0.062745098);
+  padding: 8px 16px;
+  font-size: 1.5rem;
+  font-family: inter_semi;
+  border-radius: 25px;
+  margin-bottom: 1rem;
+}
+
+.br_adapt {
+  display: unset;
+}
+
+.form-check-label {
+  font-family: inter_med;
+  color: #7E8492;
+}
+
+.form-check.form-switch {
+  margin-top: 2rem;
+  transform: scale(1.4);
+}
+
+@media screen and (max-width: 800px) {
+  .br_adapt {
+    display: none;
+  }
+  .plan_hero_h1 {
+    font-size: 3rem;
+  }
+}
+.plan_cards {
+  margin-top: 5rem;
+}
+
+.plan_card {
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  border: 1px solid #EDEDED;
+  padding: 40px 20px;
+  border-radius: 16px;
+  background-color: transparent;
+  transition: all 0.4s ease;
+}
+
+.plan_card:hover {
+  transform: translateY(-20px);
+  background-color: #161A34;
+  border: 1px solid #1463FF;
+}
+.plan_card:hover .plan_card_h1, .plan_card:hover .plan_card_p, .plan_card:hover .plan_card_price, .plan_card:hover .price_tag, .plan_card:hover .card_ul_h, .plan_card:hover .card_li_p {
+  color: white;
+}
+.plan_card:hover .card_button {
+  border-color: white;
+}
+.plan_card:hover .icon_container {
+  background-color: #1463FF;
+}
+.plan_card:hover .card_icon {
+  filter: invert(1);
+}
+.plan_card:hover .card_tag {
+  color: #fff;
+  background-color: #1463FF;
+}
+
+.card_tag {
+  color: #1463FF;
+  background-color: rgba(20, 98, 255, 0.062745098);
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-family: inter_semi;
+  border-radius: 25px;
+  height: max-content;
+  transition: all 0.4s ease;
+}
+
+.icon_container {
+  background-color: #F5F5F5;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+  margin-bottom: 1rem;
+}
+
+.card_icon {
+  width: 25px;
+  height: 25px;
+  transition: all 0.4s ease;
+}
+
+.card_button {
+  font-family: inter_semi;
+  color: #1D1E25;
+  background-color: white;
+  border: 1px solid #CED1D8;
+  padding: 1rem 3rem;
+  width: max-content;
+  border-radius: 30px;
+  align-self: center;
+  margin-top: 2rem;
+}
+
+.plan_card_h1 {
+  font-family: inter_semi;
+  color: #1D1E25;
+  font-size: 2rem;
+}
+
+.plan_card_p {
+  font-family: inter_med;
+  color: #7E8492;
+  font-size: 1.2rem;
+}
+
+.plan_card_price {
+  font-family: inter_semi;
+  color: #1D1E25;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.price_tag {
+  font-family: inter_med;
+  color: #7E8492;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+}
+
+.card_ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+}
+
+.card_ul_h {
+  font-family: inter_bold;
+  color: #1D1E25;
+  font-size: 1.2rem;
+}
+
+.card_ul_li {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.card_li_p {
+  margin: 0;
+  font-family: inter_med;
+  color: #1D1E25;
+}
+
+.custom_disabled .card_li_p {
+  color: #7E8492;
+  text-decoration: line-through;
 }/*# sourceMappingURL=main.css.map */

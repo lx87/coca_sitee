@@ -1,3 +1,54 @@
+//ANNUAL
+const priceOne = document.getElementById('price_one');
+const priceTwo = document.getElementById('price_two');
+const priceThree = document.getElementById('price_three');
+const annual_switch = document.getElementById('flexSwitchCheckDefault');
+const priceTags = document.querySelectorAll('.price_tag');
+
+// Изначальные цены
+const originalPrices = {
+    monthly: {
+        one: '100$',
+        two: '200$',
+        three: '300$'
+    },
+    yearly: {
+        one: '80$',
+        two: '180$',
+        three: '260$'
+    }
+};
+
+(function () {
+    // Устанавливаем начальные цены и метки
+    priceOne.textContent = originalPrices.monthly.one;
+    priceTwo.textContent = originalPrices.monthly.two;
+    priceThree.textContent = originalPrices.monthly.three;
+    priceTags.forEach(function(tag) {
+        tag.textContent = "/mo";
+    });
+})();
+
+let isMontly = true;
+
+// Обрабатываем переключатель
+annual_switch.addEventListener('change', function() {
+    isMontly = !isMontly;
+
+    // Выбираем цены в зависимости от режима
+    const prices = isMontly ? originalPrices.monthly : originalPrices.yearly;
+
+    // Устанавливаем новые цены
+    priceOne.textContent = prices.one;
+    priceTwo.textContent = prices.two;
+    priceThree.textContent = prices.three;
+
+    // Обновляем метки (ежемесячный или ежегодный режим)
+    const newText = isMontly ? '/mo' : '/year';
+    priceTags.forEach(function(tag) {
+        tag.textContent = newText;
+    });
+});
 // активация тултипов
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));

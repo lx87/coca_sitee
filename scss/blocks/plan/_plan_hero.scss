@@ -1,0 +1,39 @@
+.plan_hero_h1{
+    color: black;
+    font-family: $bold;
+    font-size: 7rem;
+    text-align: center;
+}
+
+.hero_tag{
+    color: #1463FF;
+    background-color: #1462ff10;
+    padding: 8px 16px;
+    font-size: 1.5rem;
+    font-family: $semi;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+}
+
+.br_adapt{
+    display: unset;
+}
+
+.form-check-label{
+    font-family: $med;
+    color: #7E8492;
+}
+
+.form-check.form-switch{
+    margin-top: 2rem;
+    transform: scale(1.4);
+}
+
+@media screen and (max-width:800px) {
+    .br_adapt{
+        display: none;
+    }
+    .plan_hero_h1{
+        font-size: 3rem;
+    }
+ }
