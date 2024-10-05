@@ -11854,33 +11854,33 @@ body {
 }
 
 .bg_top {
-  background-image: url(/img/bg_hero.png);
+  background-image: url(/coca_sitee/img/bg_hero.png);
   background-size: cover;
   background-position: center;
   padding-bottom: 7.5vw;
 }
 
 .bg_bottom {
-  background-image: url(/img/bg_bottom.png);
+  background-image: url(/coca_sitee/img/bg_bottom.png);
   background-position: center;
   background-size: cover;
 }
 
 @font-face {
   font-family: inter_reg;
-  src: url(/fonts/Inter-Regular.otf);
+  src: url(/coca_sitee/fonts/Inter-Regular.otf);
 }
 @font-face {
   font-family: inter_bold;
-  src: url(/fonts/Inter-Bold.otf);
+  src: url(/coca_sitee/fonts/Inter-Bold.otf);
 }
 @font-face {
   font-family: inter_med;
-  src: url(/fonts/Inter-Medium.otf);
+  src: url(/coca_sitee/fonts/Inter-Medium.otf);
 }
 @font-face {
   font-family: inter_semi;
-  src: url(/fonts/Inter-SemiBold.otf);
+  src: url(/coca_sitee/fonts/Inter-SemiBold.otf);
 }
 .navbar-custom {
   background-color: transparent; /* Белый фон */
