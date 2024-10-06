@@ -20,18 +20,21 @@ const originalPrices = {
 };
 
 (function () {
-    // Устанавливаем начальные цены и метки
-    priceOne.textContent = originalPrices.monthly.one;
-    priceTwo.textContent = originalPrices.monthly.two;
-    priceThree.textContent = originalPrices.monthly.three;
-    priceTags.forEach(function(tag) {
-        tag.textContent = "/mo";
+    if(priceOne){
+            // Устанавливаем начальные цены и метки
+            priceOne.textContent = originalPrices.monthly.one;
+            priceTwo.textContent = originalPrices.monthly.two;
+            priceThree.textContent = originalPrices.monthly.three;
+            priceTags.forEach(function(tag) {
+            tag.textContent = "/mo";
     });
+    }
 })();
 
 let isMontly = true;
 
-// Обрабатываем переключатель
+if(annual_switch){
+    // Обрабатываем переключатель
 annual_switch.addEventListener('change', function() {
     isMontly = !isMontly;
 
@@ -49,6 +52,8 @@ annual_switch.addEventListener('change', function() {
         tag.textContent = newText;
     });
 });
+}
+
 // активация тултипов
 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));

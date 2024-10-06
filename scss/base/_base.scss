@@ -32,23 +32,44 @@ $h2c: #7E8492;
 
 @font-face {
     font-family: inter_reg;
-    src: url(/coca_sitee/fonts/Inter-Regular.otf);
+    src: url(/fonts/Inter-Regular.otf);
 }
 
 @font-face {
     font-family: inter_bold;
-    src: url(/coca_sitee/fonts/Inter-Bold.otf);
+    src: url(/fonts/Inter-Bold.otf);
 }
 
 @font-face {
     font-family: inter_med;
-    src: url(/coca_sitee/fonts/Inter-Medium.otf);
+    src: url(/fonts/Inter-Medium.otf);
 }
 
 @font-face {
     font-family: inter_semi;
-    src: url(/coca_sitee/fonts/Inter-SemiBold.otf);
+    src: url(/fonts/Inter-SemiBold.otf);
 }
+
+// @font-face {
+//     font-family: inter_reg;
+//     src: url(/coca_sitee/fonts/Inter-Regular.otf);
+// }
+
+// @font-face {
+//     font-family: inter_bold;
+//     src: url(/coca_sitee/fonts/Inter-Bold.otf);
+// }
+
+// @font-face {
+//     font-family: inter_med;
+//     src: url(/coca_sitee/fonts/Inter-Medium.otf);
+// }
+
+// @font-face {
+//     font-family: inter_semi;
+//     src: url(/coca_sitee/fonts/Inter-SemiBold.otf);
+// }
+
 
 $reg: inter_reg;
 $bold: inter_bold;

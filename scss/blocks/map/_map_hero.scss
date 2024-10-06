@@ -1,0 +1,43 @@
+.map_hero_h1{
+    color: #1D1E25;
+    font-family: $bold;
+    font-size: clamp(2rem, 4vw, 6rem);
+}
+
+.map_img{
+    width: 100%;
+}
+
+.map_section{
+    margin-top: 100px;
+}
+
+.map_text_container{
+    width: max-content;
+    border-bottom: solid 1px #AFB3BB;
+    padding: 0rem 1rem;
+    padding-left: 3px;
+}
+
+.map_text_col_h1{
+    color: #1D1E25;
+    font-family: $bold;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+.map_text_col_p1{
+    color: #7E8492;
+    font-family: $reg;
+    font-size: 1rem;
+}
+.map_text_col_p2{
+    color: #1D1E25;
+    font-family: $med;
+    font-size: 1rem;
+}
+
+@media screen and (max-width:991px) {
+    .map_text_container{
+        border-bottom: solid 1px transparent;
+    }
+}

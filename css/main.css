@@ -11868,19 +11868,19 @@ body {
 
 @font-face {
   font-family: inter_reg;
-  src: url(/coca_sitee/fonts/Inter-Regular.otf);
+  src: url(/fonts/Inter-Regular.otf);
 }
 @font-face {
   font-family: inter_bold;
-  src: url(/coca_sitee/fonts/Inter-Bold.otf);
+  src: url(/fonts/Inter-Bold.otf);
 }
 @font-face {
   font-family: inter_med;
-  src: url(/coca_sitee/fonts/Inter-Medium.otf);
+  src: url(/fonts/Inter-Medium.otf);
 }
 @font-face {
   font-family: inter_semi;
-  src: url(/coca_sitee/fonts/Inter-SemiBold.otf);
+  src: url(/fonts/Inter-SemiBold.otf);
 }
 .navbar-custom {
   background-color: transparent; /* Белый фон */
@@ -12805,4 +12805,109 @@ body {
 .custom_disabled .card_li_p {
   color: #7E8492;
   text-decoration: line-through;
+}
+
+.map_hero_h1 {
+  color: #1D1E25;
+  font-family: inter_bold;
+  font-size: clamp(2rem, 4vw, 6rem);
+}
+
+.map_img {
+  width: 100%;
+}
+
+.map_section {
+  margin-top: 100px;
+}
+
+.map_text_container {
+  width: max-content;
+  border-bottom: solid 1px #AFB3BB;
+  padding: 0rem 1rem;
+  padding-left: 3px;
+}
+
+.map_text_col_h1 {
+  color: #1D1E25;
+  font-family: inter_bold;
+  font-size: 2rem;
+  margin-top: 10px;
+}
+
+.map_text_col_p1 {
+  color: #7E8492;
+  font-family: inter_reg;
+  font-size: 1rem;
+}
+
+.map_text_col_p2 {
+  color: #1D1E25;
+  font-family: inter_med;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 991px) {
+  .map_text_container {
+    border-bottom: solid 1px transparent;
+  }
+}
+.logo_grid {
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  grid-template-rows: 1fr 1fr;
+  column-gap: 1vw;
+}
+
+.logo_grid_img {
+  padding: 1vw;
+  font-size: clamp(75px, 7vw, 100px);
+}
+
+#grid_4n4 {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.grid_h {
+  color: #1D1E25;
+  font-family: inter_bold;
+  font-size: clamp(2rem, 4vw, 6rem);
+}
+
+.grid_p {
+  color: #7E8492;
+  font-family: inter_med;
+  font-size: clamp(1rem, 2vw, 4rem);
+}
+
+@media screen and (max-width: 1400px) {
+  .logo_grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, max-content);
+    align-self: flex-start;
+  }
+  #grid_4n4 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .logo_grid_img {
+    padding: 1vw;
+    width: 140px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .logo_grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, max-content);
+    align-self: center;
+  }
 }/*# sourceMappingURL=main.css.map */
