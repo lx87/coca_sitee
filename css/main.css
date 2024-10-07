@@ -11868,19 +11868,19 @@ body {
 
 @font-face {
   font-family: inter_reg;
-  src: url(/fonts/Inter-Regular.otf);
+  src: url(/coca_sitee/fonts/Inter-Regular.otf);
 }
 @font-face {
   font-family: inter_bold;
-  src: url(/fonts/Inter-Bold.otf);
+  src: url(/coca_sitee/fonts/Inter-Bold.otf);
 }
 @font-face {
   font-family: inter_med;
-  src: url(/fonts/Inter-Medium.otf);
+  src: url(/coca_sitee/fonts/Inter-Medium.otf);
 }
 @font-face {
   font-family: inter_semi;
-  src: url(/fonts/Inter-SemiBold.otf);
+  src: url(/coca_sitee/fonts/Inter-SemiBold.otf);
 }
 .navbar-custom {
   background-color: transparent; /* Белый фон */
