@@ -1,0 +1,42 @@
+.article{
+    padding: 0 clamp(20px, 10vw, 100px);
+}
+
+.article_h1{
+    font-family: $bold;
+    color: $h1c;
+    font-size: clamp(2rem, 4vw, 6rem);
+    margin-top: 4rem;
+}
+
+.article_semi_h{
+    font-family: $bold;
+    color: $h1c;
+    font-size: clamp(1.4rem, 4.5vw, 3rem);
+}
+
+
+.article_head{
+
+}
+
+.article_ava{
+    border-radius: 100%;
+}
+
+.article_p{
+    color: $h1c;
+    font-family: $reg;
+    font-size: clamp(1rem, 1.5vw, 2rem);
+    line-height: 2.1rem;
+    letter-spacing: 0.05em;
+    line-height: 1.6; 
+    text-align: justify;
+    margin-top: 3.5rem; 
+    margin-bottom: 3.5rem; 
+}
+
+.article_img{
+    width: 100%;
+    margin-bottom: 3rem;
+}

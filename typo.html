@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ECgpCBYSMXk5zYaG2Gb1s6J/TqJ9mZ5pWTmn/HwpS7pG9QQN1mcuWy+BDNNkPgF3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
+    <title>Blog</title>
+</head>
+<body>
+    <!--Nav + hero-->    
+    <div class="wrapper">
+        <!--Nav-->
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom ">
+            <div class="container-fluid nav_container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.svg" alt="" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="img/burger.svg" alt="" class="custom-toggler-icon">
+                </button>
+                <div class="collapse navbar-collapse justify-content-end nav_menu"  id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="command.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="typo.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-medium" href="plan.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-semibold nav-link-contact" href="map.html">Contact Us →</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="article">
+            <div class="article_head">
+                <p class="article_h1">
+                    How we perform long- <br>
+                    running tasks using AWS <br>
+                     services
+                </p>
+            </div>
+            <div class="article_body">
+                <div class="d-flex gap-4 align-items-center mb-4">
+                    <img src="img/ava2.png" alt="" class="article_ava">
+                    <div class="d-flex flex-column">
+                        <div class="ava_name m-0">LX</div>
+                        <div class="ava_surname m-0">Product Designer, Quotient</div>
+                    </div>
+                </div>
+                <img src="img/article.png" alt="article_image" class="article_img">
+                <p class="article_p">Depending on the input, this can result in using a lot of processing power and time. The whole process would take approximately 5 seconds to return a result to the client. Keep in mind we're talking about 1 item, a contact from a contact book. After a while, a new requirement is added. Solution must support companies that manage their contacts organized in files. We agreed to develop a web application that would support upload of dataset files, like .csv. The new web application should support third party integrations. Some of them are the ESP/CRM services, like Mailchimp. User does not need to see the result immediately. System can later notify the user about the result, when the process finishes. This information is the key that we need to leverage on when developing our solution. So here's how we did it.</p>
+                <p class="article_semi_h">Initial approach</p>
+                <p class="article_p">Our initial approach went like this: The web application would read a .csv file line-by-line and submit an array of entries to the backend REST API. Processing is in real time, immediately after the user makes a request for the process to start, he expects a result. Another approach is to apply vertical scaling to AWS architecture. Meaning we used larger, more expensive instances that have more RAM and processing power. This system worked well for smaller datasets, maybe up to 5k entries, but for larger datasets multiple problems arose. This solution is prone to failure due to long request time. Also, because of some 3rd party services that aren't optimized for large scale loads or they don't have batch endpoints. 3rd party services also tend to protect their architecture from making a huge bill on their end. The whole process was done in real-time. The request can take a lot of time hanging in there while the backend would do all the work and return the result to the client. The request was limited to 300 seconds (at time of writing the article) before AWS would cancel it… Also I need to mention that the user has to wait a few minutes to see the results. They can't use the app during the process, which makes for a bad user experience.</p>
+            </div>
+            <div class="article_foot"></div>
+        </section>
+    </div>
+    <!-- footer -->
+    <div class="wrapper bg_bottom mt-5 pt-5">
+    <footer class="footer">
+            <div class="container-fluid mb-5 mt-5">
+               <div class="row d-flex flex-column flex-xl-row justify-content-between align-items-start align-items-xl-center ">
+                <div class="col-auto">
+                    <h1 class="fw-bold display-3">Think beyond the wave</h1>
+                    <h2 class="fw-semibold hero_h2 footer_h2 mt-lg-5 mt-md-3 mt-sm-5 fs-3">
+                        Ask about Coca products, <br>
+                         pricing, implementation, or anything else. Our highly <br>
+                          trained reps are standing by, ready to help
+                    </h2>
+                </div>
+                <div class="col-auto">
+                    <button class="footer_button mt-3 mt-xl-0 fw-bold" >Try for free</button>
+                </div>
+               </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row footer_nav justify-content-between pb-5 pt-5">
+                    <div class="col-10 col-xl-4">
+                        <img src="img/logo.svg" alt="logo" class="mb-3">
+                        <h5 class="footer_logo_h" >We built an elegant solution. Our team created a fully integrated sales and marketing solution for SMBs</h5>
+                    </div>
+                    <div class="col footer_nav_wrap">
+                        <div class="row justify-content-end gap-5">
+                            <div class="col-auto">
+                                <h5 class="footer_nav_h">Company</h5>
+                                <ul class="list-unstyled footer_p_col">
+                                    <li><p class="footer_nav_li_p">About</p></li>
+                                    <li><p class="footer_nav_li_p">Pricing</p></li>
+                                    <li><p class="footer_nav_li_p">Jobs</p></li>
+                                    <li><p class="footer_nav_li_p">Blog</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="footer_nav_h">Product</h5>
+                                <ul class="list-unstyled footer_p_col">
+                                    <li><p class="footer_nav_li_p">Sales Software</p></li>
+                                    <li><p class="footer_nav_li_p">Marketplace</p></li>
+                                    <li><p class="footer_nav_li_p">Terms & Conditions</p></li>
+                                    <li><p class="footer_nav_li_p">Privacy Policy</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="footer_nav_h">Discover</h5>
+                                <ul class="list-unstyled footer_p_col">
+                                    <li><p class="footer_nav_li_p">CRM Comparision</p></li>
+                                    <li><p class="footer_nav_li_p">Partner Program</p></li>
+                                    <li><p class="footer_nav_li_p">What is CRM</p></li>
+                                    <li><p class="footer_nav_li_p">Resource</p></li>
+                                </ul>
+                            </div>
+                            <div class="col-auto">
+                                <h5 class="footer_nav_h">Help Center</h5>
+                                <ul class="list-unstyled footer_p_col">
+                                    <li><p class="footer_nav_li_p">Community</p></li>
+                                    <li><p class="footer_nav_li_p">Knowledge Base</p></li>
+                                    <li><p class="footer_nav_li_p">Academy</p></li>
+                                    <li><p class="footer_nav_li_p">Support</p></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <h1 class="footer_bottom_text text-center fs-6">© Copyright 2023 All Rights Reserved</h1>
+    </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" ></script>
+    <script src="/js/script.js" ></script>
+</body>
+</html>

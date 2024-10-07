@@ -8,7 +8,33 @@
     <link rel="shortcut icon" href="img/favicon.svg" type="image/x-icon">
     <title>Coca</title>
 </head>
-<body>
+<body class="p-0">
+    <div class="modal fade p-0" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Вход</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="mb-3">
+                            <label for="emailInput" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="Введите email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="passwordInput" class="form-label">Пароль</label>
+                            <input type="password" class="form-control" id="passwordInput" placeholder="Введите пароль" required>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                            <button type="submit" class="btn btn-primary">Войти</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Nav + hero-->    
     <div class="wrapper bg_top">
         <!--Nav-->
@@ -26,16 +52,19 @@
                             <a class="nav-link fw-medium" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" href="typo.html">About</a>
+                            <a class="nav-link fw-medium" href="command.html">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link fw-medium" href="command.html">Blog</a>
+                            <a class="nav-link fw-medium" href="typo.html">Blog</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-medium" href="plan.html">Pricing</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link fw-semibold nav-link-contact" href="map.html">Contact Us →</a>
+                        </li>
+                        <li class="nav-item"></li>
+                            <a class="nav-link fw-semibold" href="index.html" id="user_login" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -52,10 +81,10 @@
                 marketing, we've got you covered. <br>
                 Be where the world is going
                 </h2>
-                <div class="container-fluid d-flex flex-row hero_input_contaier justify-content-between align-items-end mt-5">
-                    <input class="hero_input" type="text" placeholder="Enter your email">
-                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your Email ang get started!" type="button" class="hero_input_button fw-bold">Try for free</button>
-                </div>
+                <form id="reg_form" class="container-fluid d-flex flex-row hero_input_contaier justify-content-between align-items-end mt-5">
+                    <input id="reg_mail" class="hero_input" type="text" placeholder="Enter your email" required>
+                    <button data-bs-toggle="tooltip" data-bs-placement="top" title="Enter your Email ang get started!" type="submit" class="hero_input_button fw-bold">Try for free</button>
+                </form>
             </div>
             <div class="col-12 col-xl-auto d-flex flex-column align-items-center align-items-xxl-end justify-content-center p-0"> 
                 <!-- hero col2 -->
@@ -604,5 +633,7 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js" ></script>
+    <script src="js/validation.js" ></script>
+    <script src="js/registration.js"></script>
 </body>
 </html>
