@@ -21,7 +21,7 @@ if (form) {
     });
 }
 
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
     if (localStorage.getItem('show_reg') === 'true') {
         let savedEmail = localStorage.getItem('email');
         mailInput.value = savedEmail; 
@@ -39,7 +39,7 @@ if (regForm) {
     });
 }
 
-window.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
     if (localStorage.getItem('show_modal') === 'true') {
         alert(`You have successfully registered, now you can log in!`);
         localStorage.removeItem('show_modal');
